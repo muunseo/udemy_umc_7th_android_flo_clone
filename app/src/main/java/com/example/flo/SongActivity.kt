@@ -10,9 +10,12 @@ class SongActivity:AppCompatActivity () {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         viewBinding = ActivitySongBinding.inflate(layoutInflater)
         setContentView(viewBinding.root)
+        //songDownIb버튼을 눌렀을 때 액티비티 종료
+        viewBinding.songDownIb.setOnClickListener{
+            finish()
+        }
     }
 
 
