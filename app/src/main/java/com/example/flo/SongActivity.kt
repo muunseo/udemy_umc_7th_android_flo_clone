@@ -23,6 +23,9 @@ class SongActivity:AppCompatActivity () {
         viewBinding.pausebtn.setOnClickListener{
             setPlayerStatus(true)
         }
+        if (intent.hasExtra("title") && intent.hasExtra("singer"))
+            viewBinding.tvtitle.text=intent.getStringExtra("title")
+        viewBinding.tvsinger.text=intent.getStringExtra("singer")
     }
 
     fun  setPlayerStatus(isPlaying : Boolean){

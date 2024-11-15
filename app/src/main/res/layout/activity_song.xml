@@ -18,7 +18,7 @@
         app:srcCompat="@drawable/img_album_exp2" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tvtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="181dp"
@@ -26,12 +26,12 @@
         android:layout_marginBottom="20dp"
         android:text="제목"
         android:textSize="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintBottom_toTopOf="@+id/tvsinger"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/tvsinger"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="185dp"
@@ -78,5 +78,22 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView4"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/btn_miniplayer_play" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:visibility="gone"
+        app:srcCompat="@drawable/nugu_btn_repeat_inactive"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="541dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/nugu_btn_random_inactive"
+        tools:layout_editor_absoluteX="295dp"
+        tools:layout_editor_absoluteY="541dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
